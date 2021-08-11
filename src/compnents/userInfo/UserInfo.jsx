@@ -2,6 +2,49 @@ import React from "react";
 
 let usersList = ["leib-ran", "sparco7", "harduf-l", "fareska"];
 
+localStorage.setItem(
+  "users",
+  JSON.stringify([
+    {
+      avatar_url: "https://avatars.githubusercontent.com/u/67533862?v=4",
+      bio: "Junior Data analyst \r\n\r\n\r\nGraduate BCs Biotechnology Engineering at Ben-Gurion University.",
+      blog: "",
+      company: null,
+      created_at: "2020-06-28T06:03:55Z",
+      email: null,
+      events_url: "https://api.github.com/users/leib-ran/events{/privacy}",
+      followers: 0,
+      followers_url: "https://api.github.com/users/leib-ran/followers",
+      following: 0,
+      following_url:
+        "https://api.github.com/users/leib-ran/following{/other_user}",
+      gists_url: "https://api.github.com/users/leib-ran/gists{/gist_id}",
+      gravatar_id: "",
+      hireable: null,
+      html_url: "https://github.com/leib-ran",
+      id: 67533862,
+      location: "Israel",
+      login: "leib-ran",
+      name: "Ran leibovitz",
+      node_id: "MDQ6VXNlcjY3NTMzODYy",
+      organizations_url: "https://api.github.com/users/leib-ran/orgs",
+      public_gists: 0,
+      public_repos: 11,
+      received_events_url:
+        "https://api.github.com/users/leib-ran/received_events",
+      repos_url: "https://api.github.com/users/leib-ran/repos",
+      site_admin: false,
+      starred_url:
+        "https://api.github.com/users/leib-ran/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/leib-ran/subscriptions",
+      twitter_username: null,
+      type: "User",
+      updated_at: "2021-08-10T06:07:22Z",
+      url: "https://api.github.com/users/leib-ran",
+    },
+  ])
+);
+
 export default class UserInfo extends React.Component {
   constructor(props) {
     super(props);
